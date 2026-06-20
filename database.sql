@@ -1,0 +1,10 @@
+CREATE DATABASE otp_db;
+
+USE otp_db;
+
+CREATE TABLE otp_records (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    email VARCHAR(100) NOT NULL,
+    otp VARCHAR(6) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
